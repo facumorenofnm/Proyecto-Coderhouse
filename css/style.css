@@ -3,12 +3,13 @@
     margin: 0px;
     box-sizing: border-box;
 }
-header{
+
+header {
     padding: 16px;
     background: black;
 }
 
-header h1 a{
+header h1 a {
     font-size: 24px;
     color: white;
     width: 100%;
@@ -17,7 +18,8 @@ header h1 a{
     display: flex;
     justify-content: center;
 }
-header nav ul{
+
+header nav ul {
     display: flex;
     width: 100%;
     height: auto;
@@ -29,7 +31,8 @@ header nav ul{
     align-items: center;
     text-transform: uppercase;
 }
-.navbar a{
+
+.navbar a {
     width: 100%;
     color: white;
     font-size: 10px;
@@ -38,41 +41,90 @@ header nav ul{
     flex-direction: row;
 }
 
-.titulo-articulo{
+.titulo-articulo {
     color: red;
+    padding: 16px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: left;
 }
-.grid-container{
-    padding: 16px;
+
+.grid-container {
+    /* padding: 16px; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 16px;
 }
-.grid-item{
-    background-color:rgb(252, 247, 247);
-} 
-img{
+
+.grid-item {
+    background-color: rgb(252, 247, 247);
+}
+
+img {
     width: 100%;
     height: auto;
 }
-.texto-articulo{
+
+.texto-articulo {
     width: 100%;
     height: auto;
+    padding: 10px;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.titulo-seccion{
-    color: black;
+
+.titulo-seccion {
+    color: rgba(0, 0, 0, 0.562);
+    padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20
-    px; 
+    font-size: 20 px;
 }
-.texto-footer{
-    font-size: 8px; 
+
+.texto-footer {
+    background-color: black;
+    color: aquamarine;
+    font-size: 8px;
     font-family: cursive;
     text-align: center;
+}
+
+@media(min-width: 768px) {
+    header h1 a {
+        font-size: 60px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .titulo-articulo {
+        font-size: 25px;
+    }
+    .grid-container {
+        padding: 16px;
+    }
+    .titulo-seccion {
+        font-size: 50px;
+    }
+
+    .texto-footer {
+        font-size: 16px;
+        font-family: cursive;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-articulo {
+        width: 100%;
+        height: auto;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
