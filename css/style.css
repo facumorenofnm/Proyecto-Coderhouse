@@ -1,88 +1,63 @@
-h1 a{ 
-    color: black; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 42px; 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    padding: 16px;
+    background: black;
+}
+header h1 a{
+    font-size: 24px;
+    color: white;
+    justify-content: center;
+    list-style: none;
     text-decoration: none;
+}
+header nav ul{
     display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding: 16px;
+    color: white;
+    list-style: none;
+    justify-content: space-around;
     align-items: center;
-}
-.navegador{
-    color: black;
-    text-decoration: none;
-    font-size: 12px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    align-content: center;
-}
-.lista-nav{
-    list-style-type: none;
-    text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
-    margin: 0 10px;
 }
-.titulo-destacados{
-    color: black;
-    font-size: 35px;
+.navbar a{
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    justify-content: space-around;
+    flex-direction: row;
 }
-.img-destacados{
-    width: 400px;
-    height: 400px;
-}
-.texto-destacados{
-    color: black; 
+
+.titulo-articulo{
+    color: red;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;  
-    width: 400px;
-}
-.contenedor{
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    align-items: center;
+    justify-content: left;
 }
-.art-1{
-    margin-right: 45px;
+.grid-container{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
-.art-2{
-    margin-left: 45px;
+.grid-item{
+    background-color:rgb(252, 247, 247);
+} 
+img{
+    width: 100%;
+    height: auto;
 }
-.art-3{
-    margin-left: 90px;
-}
-.titulo-seccion{
+.texto-articulo{
+    width: 100%;
+    height: auto;
     color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 40px; 
-}
-.titulo-art{
-    color: black; 
-    font-size: 25px; 
-    width: 300px;
-}
-.img-art{
-    width: 300px;
-    height: 300px;
-}
-.texto-art{
-    width: 300px; 
-    font-family: 'Courier New', Courier, monospace; 
-    font-size: 15px
-}
-.boton{
-    color:red; 
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-.links{
-    font-style: oblique;
-    font-weight: 900;
-    text-decoration: none;
-}
-.formulario{
-    width: 350px;
-}
-.texto-footer{
-    font-size: 10px; 
-    font-family: cursive;
-    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
