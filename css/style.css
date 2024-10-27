@@ -7,12 +7,15 @@ header{
     padding: 16px;
     background: black;
 }
+
 header h1 a{
     font-size: 24px;
     color: white;
-    justify-content: center;
+    width: 100%;
     list-style: none;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 header nav ul{
     display: flex;
