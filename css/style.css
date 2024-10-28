@@ -11,7 +11,7 @@ header {
 
 header h1 a {
     font-size: 24px;
-    color: white;
+    color: rgba(255, 255, 255, 0.877);
     width: 100%;
     list-style: none;
     text-decoration: none;
@@ -19,7 +19,7 @@ header h1 a {
     justify-content: center;
 }
 
-header nav ul {
+header div nav ul {
     display: flex;
     width: 100%;
     height: auto;
@@ -103,9 +103,11 @@ img {
     .titulo-articulo {
         font-size: 25px;
     }
+
     .grid-container {
         padding: 16px;
     }
+
     .titulo-seccion {
         font-size: 50px;
     }
@@ -127,4 +129,51 @@ img {
         color: black;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+}
+
+@media(min-width:1200px) and (max-width:1300px){
+    .navegador{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header div nav ul li {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding: 16px;
+        color: white;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    .navbar a {
+        width: 100%;
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        justify-content: space-between  ;
+        flex-direction: row;
+        align-items: center; 
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 16px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .texto-articulo {
+        width: 100%;
+        height: auto;
+    }
+
 }
