@@ -11,6 +11,7 @@ header {
 
 header h1 a {
     font-size: 24px;
+    font-family: "Trade Winds", system-ui;
     color: rgba(255, 255, 255, 0.877);
     width: 100%;
     list-style: none;
@@ -51,11 +52,12 @@ header div nav ul {
 }
 
 .grid-container {
-    /* padding: 16px; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 16px;
+    gap: 20px; 
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
 }
 
 .grid-item {
@@ -80,6 +82,18 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20 px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
 }
 .grid-nosotros{
     grid: flex;
@@ -93,9 +107,57 @@ img {
 .texto-art{
     width: 100%;
     height: auto;
+    align-content: space-around;
+}
+.colab-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    gap: 10px;
+}
+.colaboraciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.colaboraciones h3{
+    display: flex;
+    justify-content: center;
+}
+.colaboraciones a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.grid-experiencias{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.grid-art{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.img-art{
+    width: 100%;
+    height: auto;
+}
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    gap: 20px;
 }
 .texto-footer {
-    background-color: black;
     color: aquamarine;
     font-size: 8px;
     font-family: cursive;
@@ -139,6 +201,25 @@ img {
         height: auto;
         color: black;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .grid-experiencias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .grid-art{
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .img-art{
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -191,15 +272,48 @@ img {
     }
     .grid-nosotros{
         display: flex;
-        flex-direction: row;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        flex-direction: column;
         padding: 16px;
-        justify-content: space-between;
+        justify-content:space-evenly;
         align-items: center;
+        gap: 20px;
     }
     .img-destacados{
-        width: 50%;
+        width: 80%;
         height: auto;
     }
+    .titulo-seccion {
+        color: rgba(0, 0, 0, 0.562);
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20 px;
+        align-items: center;
+        justify-items: center;
+    }
+    .texto-art{
+        width: 80%;
+        text-align: center;
+        margin: 20px;
+    }
+    .grid-experiencias{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; 
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .grid-art{
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .img-art{
+        width: 100%;
+        height: auto;
+    }
+    
 }
