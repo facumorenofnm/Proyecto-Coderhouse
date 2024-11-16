@@ -1,0 +1,322 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 16px;
+    background: black;
+
+    h1 a{
+        font-size: 24px;
+    font-family: "Trade Winds", system-ui;
+    color: rgba(255, 255, 255, 0.877);
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    }
+
+    div nav ul{
+        display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding: 16px;
+    color: white;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    }
+}
+
+
+
+// CODIGO CSS ANTERIOR
+.navbar a {
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.titulo-articulo {
+    color: red;
+    padding: 16px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: rgb(252, 247, 247);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.texto-articulo {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo-seccion {
+    color: rgba(0, 0, 0, 0.562);
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20 px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+.grid-nosotros{
+    grid: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.img-destacados{
+    width: 100%;
+    height: auto;
+}
+.texto-art{
+    width: 100%;
+    height: auto;
+    align-content: space-around;
+}
+.colab-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    gap: 10px;
+}
+.colaboraciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.colaboraciones h3{
+    display: flex;
+    justify-content: center;
+}
+.colaboraciones a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.grid-experiencias{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.grid-art{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.img-art{
+    width: 100%;
+    height: auto;
+}
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    gap: 20px;
+}
+.texto-footer {
+    color: aquamarine;
+    font-size: 8px;
+    font-family: cursive;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    header h1 a {
+        font-size: 60px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .titulo-articulo {
+        font-size: 25px;
+    }
+
+    .grid-container {
+        padding: 16px;
+    }
+
+    .titulo-seccion {
+        font-size: 50px;
+    }
+
+    .texto-footer {
+        font-size: 16px;
+        font-family: cursive;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-articulo {
+        width: 100%;
+        height: auto;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .grid-experiencias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .grid-art{
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .img-art{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1400px){
+    .navegador{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header div nav ul li {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding: 16px;
+        color: white;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    .navbar a {
+        width: 100%;
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        justify-content: space-between  ;
+        flex-direction: row;
+        align-items: center; 
+    }
+    .grid-container{
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 16px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .texto-articulo {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .grid-nosotros{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        justify-content:space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+    .img-destacados{
+        width: 80%;
+        height: auto;
+    }
+    .titulo-seccion {
+        color: rgba(0, 0, 0, 0.562);
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20 px;
+        align-items: center;
+        justify-items: center;
+    }
+    .texto-art{
+        width: 80%;
+        text-align: center;
+        margin: 20px;
+    }
+    .grid-experiencias{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; 
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .grid-art{
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .img-art{
+        width: 100%;
+        height: auto;
+    }
+    
+}
