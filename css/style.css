@@ -1,6 +1,6 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -30,8 +30,7 @@ header div nav ul {
   align-items: center;
   text-transform: uppercase;
 }
-
-.navbar a {
+header div nav ul .navbar a {
   width: 100%;
   color: white;
   font-size: 10px;
@@ -57,9 +56,10 @@ header div nav ul {
   margin: auto;
   padding: 20px;
 }
-
-.grid-item {
-  background-color: rgb(252, 247, 247);
+.grid-container .grid-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
 }
 
 img {
@@ -80,7 +80,7 @@ img {
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 20 px;
+  font-size: 20px;
   overflow: hidden;
   white-space: nowrap;
   animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
@@ -103,7 +103,7 @@ img {
   }
 }
 .grid-nosotros {
-  grid: flex;
+  display: flex;
   flex-direction: column;
   padding: 16px;
 }
@@ -133,12 +133,10 @@ img {
   justify-content: center;
   align-content: center;
 }
-
 .colaboraciones h3 {
   display: flex;
   justify-content: center;
 }
-
 .colaboraciones a {
   display: flex;
   justify-content: center;
@@ -154,14 +152,12 @@ img {
   margin: auto;
   padding: 20px;
 }
-
-.grid-art {
+.grid-experiencias .grid-art {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
 }
-
-.img-art {
+.grid-experiencias .img-art {
   width: 100%;
   height: auto;
 }
@@ -172,8 +168,7 @@ footer {
   justify-content: center;
   gap: 20px;
 }
-
-.texto-footer {
+footer .texto-footer {
   color: aquamarine;
   font-size: 8px;
   font-family: cursive;
@@ -293,7 +288,7 @@ footer {
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20 px;
+    font-size: 20px;
     align-items: center;
     justify-items: center;
   }

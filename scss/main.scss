@@ -62,7 +62,9 @@ header {
     padding: 20px;
 
     .grid-item {
-        background-color: rgb(252, 247, 247);
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
     }
 }
 
