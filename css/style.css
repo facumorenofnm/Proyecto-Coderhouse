@@ -164,15 +164,43 @@ img {
 
 footer {
   display: flex;
+  flex-direction: column;
   background-color: black;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
+  align-items: center;
+  color: #ddd;
 }
-footer .texto-footer {
-  color: aquamarine;
-  font-size: 8px;
-  font-family: cursive;
-  text-align: center;
+footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+footer .social-icons li a {
+  text-decoration: none;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: solid;
+}
+footer .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .menu a {
+  text-decoration: none;
+  color: #ddd;
+  text-transform: uppercase;
+  align-items: center;
+}
+footer p {
+  margin: 0px;
+  font-size: 12px;
 }
 
 @media (min-width: 768px) {
@@ -190,11 +218,6 @@ footer .texto-footer {
   }
   .titulo-seccion {
     font-size: 50px;
-  }
-  .texto-footer {
-    font-size: 16px;
-    font-family: cursive;
-    text-align: center;
   }
   img {
     width: 100%;
@@ -222,6 +245,14 @@ footer .texto-footer {
   .img-art {
     width: 100%;
     height: auto;
+  }
+  footer .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .menu {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
