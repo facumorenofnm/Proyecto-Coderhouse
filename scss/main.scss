@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 * {
     padding: 0;
     margin: 0;
@@ -288,7 +290,7 @@ $border-color: #ccc;
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: darken($primary-color, 10%);
+        background-color: color.adjust($primary-color, $lightness: -10%);
       }
     }
   }
@@ -306,6 +308,8 @@ $border-color: #ccc;
     .titulo-articulo {
         font-size: 25px;
     }
+
+
 
     .grid-container {
         padding: 16px;
@@ -338,6 +342,11 @@ $border-color: #ccc;
         padding: 20px;
     }
 
+    .img-destacados {
+        width: 80%;
+        height: auto;
+    }
+
     .grid-art {
         border: 1px solid #ddd;
         padding: 10px;
@@ -347,6 +356,20 @@ $border-color: #ccc;
     .img-art {
         width: 100%;
         height: auto;
+    }
+
+    .grid-nosotros {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+
+        .img-destacados {
+            width: 80%;
+            height: auto;
+        }
     }
 
     footer {
@@ -363,7 +386,7 @@ $border-color: #ccc;
 
 }
 
-@media(min-width: 1200px) and (max-width: 1400px) {
+@media(min-width: 1200px) and (max-width: 1600px) {
     .navegador {
         display: flex;
         flex-direction: row;
@@ -416,6 +439,11 @@ $border-color: #ccc;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
+    .imagen-articulo {
+        max-width: 500px;
+        max-height: 400px;
+    }
+
     .grid-nosotros {
         display: flex;
         flex-direction: column;
@@ -423,12 +451,14 @@ $border-color: #ccc;
         justify-content: space-evenly;
         align-items: center;
         gap: 20px;
+
+        .img-destacados {
+            width: 80%;
+            height: auto;
+        }
     }
 
-    .img-destacados {
-        width: 80%;
-        height: auto;
-    }
+    
 
     .titulo-seccion {
         color: rgba(0, 0, 0, 0.562);
@@ -462,7 +492,9 @@ $border-color: #ccc;
     }
 
     .img-art {
-        width: 100%;
-        height: auto;
+        max-width: 500px;
+        max-height: 400px;
+        // width: 100%;
+        // height: auto;
     }
 }
