@@ -30,31 +30,30 @@
     <main>
         <section>
             <h2 class="titulo-seccion">ESCRIBINOS</h2>
-            <p class="texto-art">Estamos a un click de distancia</p>
+            <p class="texto-art">Si queres acompañarnos en este viaje, dejanos tu mensaje. </p>
         </section>
 
-        <div>
-            <form action="">
-                <div>
-                    <label for="nombre"></label>
-                    <input class="formulario" type="text" name="" id="nombre" placeholder="Nombre">
-                </div>
-
-                <div>
-                    <label for="correo"></label>
-                    <input class="formulario" type="email" name="" id="correo" placeholder="Email">
-                </div>
-
-                <div>
-                    <label for="mensaje"></label>
-                    <textarea class="formulario" name="" id="mensaje" placeholder="Mensaje"></textarea>
-                </div>
-
-                <input class="boton" type="submit" value="Enviar">
-
-
+        <div class="form-container">
+            <form action="#">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input class="formulario" type="text" id="nombre" placeholder="Tu nombre" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="correo">Email</label>
+                <input class="formulario" type="email" id="correo" placeholder="Tu correo electrónico" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="formulario" id="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+              </div>
+          
+              <button class="boton" type="submit">Enviar</button>
             </form>
-        </div>
+          </div>
+
     </main>
 
     <footer>
