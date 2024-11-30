@@ -236,64 +236,67 @@ $secondary-color: #666;
 $border-color: #ccc;
 
 .form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  background-color: #f0f0f0;
-
-  form {
-    background-color: $form-bg-color;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f0f0f0;
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      label {
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-        color: $secondary-color;
-      }
-      .formulario {
-        padding: 0.8rem;
-        border: 1px solid $border-color;
-        border-radius: 4px;
-        font-size: 1rem;
-        transition: border-color 0.3s;
+    form {
+        background-color: $form-bg-color;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
 
-        &:focus {
-          border-color: $primary-color;
-          outline: none;
+        .form-group {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+                color: $secondary-color;
+            }
+
+            .formulario {
+                padding: 0.8rem;
+                border: 1px solid $border-color;
+                border-radius: 4px;
+                font-size: 1rem;
+                transition: border-color 0.3s;
+
+                &:focus {
+                    border-color: $primary-color;
+                    outline: none;
+                }
+            }
+
+            textarea {
+                height: 150px;
+                resize: none;
+            }
         }
-      }
-      textarea {
-        height: 150px;
-        resize: none;
-      }
-    }
 
-    .boton {
-      background-color: $primary-color;
-      color: white;
-      padding: 0.8rem;
-      border: none;
-      border-radius: 4px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s;
+        .boton {
+            background-color: $primary-color;
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
 
-      &:hover {
-        background-color: color.adjust($primary-color, $lightness: -10%);
-      }
+            &:hover {
+                background-color: color.adjust($primary-color, $lightness: -10%);
+            }
+        }
     }
-  }
 }
 
 @media(min-width: 768px) {
@@ -458,7 +461,7 @@ $border-color: #ccc;
         }
     }
 
-    
+
 
     .titulo-seccion {
         color: rgba(0, 0, 0, 0.562);
