@@ -39,6 +39,43 @@ header div nav ul .navbar a {
   flex-direction: row;
 }
 
+@media (min-width: 768px) {
+  header h1 a {
+    font-size: 60px;
+  }
+  .navbar a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header div nav ul li {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding: 16px;
+    color: white;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .navbar a {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .titulo-articulo {
   color: red;
   padding: 16px;
@@ -261,12 +298,6 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  header h1 a {
-    font-size: 60px;
-  }
-  .navbar a {
-    font-size: 20px;
-  }
   .titulo-articulo {
     font-size: 25px;
   }
@@ -329,33 +360,6 @@ footer p {
   }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
-  .navegador {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header div nav ul li {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    padding: 16px;
-    color: white;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-  }
-  .navbar a {
-    width: 100%;
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
   .grid-container {
     display: flex;
     grid-template-columns: 1fr 1fr;
